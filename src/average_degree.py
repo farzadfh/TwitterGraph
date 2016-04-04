@@ -27,6 +27,8 @@ else:
 tweets_in_file = open(tweets_in_filename,'r')
 tweets_ou_file = open(tweets_ou_filename,'w')
 
+pd.options.mode.chained_assignment = None  # default='warn'
+
 #%%
 start_time = time.mktime(time.strptime('Mar 20 00:00:00 +0000 2006','%b %d %H:%M:%S +0000 %Y'))
 window_length = 60
